@@ -58,8 +58,8 @@ RTGS-Style-AI-Analyst/
 ## Installation
 ### Clone repo
 ```
-git clone https://github.com/YOUR_USERNAME/Telangana-Literacy-Dashboard.git
-cd Telangana-Literacy-Dashboard
+git clone https://github.com/ananyakrishnaeemani/RTGS-Style-AI-Analyst.git
+cd RTGS-Style-AI-Analyst
 ```
 ### Create virtual environment
 ```
