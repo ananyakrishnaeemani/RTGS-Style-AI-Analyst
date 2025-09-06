@@ -205,3 +205,130 @@
 [2025-09-06 00:36:31] Generating insights...
 [2025-09-06 00:36:31] === Literacy Insights ===
 [2025-09-06 00:36:31] Total districts: 31
+[2025-09-06 18:45:41] Logger initialized
+[2025-09-06 18:45:41] Starting ingestion from local CSV...
+[2025-09-06 18:45:41] Local CSV copied to artifacts\full-run\raw.csv
+[2025-09-06 18:45:41] Starting standardization...
+[2025-09-06 18:45:41] Loading raw data from artifacts\full-run\raw.csv
+[2025-09-06 18:45:41] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 18:45:41] Missing values before: 0, after: 0
+[2025-09-06 18:45:41] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 18:45:41] Rows: 31, Columns: 5
+[2025-09-06 18:45:41] Starting transformation...
+[2025-09-06 18:45:41] Transformed data saved to artifacts\full-run\transformed.csv
+[2025-09-06 18:45:41] Generating insights...
+[2025-09-06 18:45:41] === Literacy Insights ===
+[2025-09-06 18:45:41] Total districts: 31
+[2025-09-06 19:01:51] Logger initialized
+[2025-09-06 19:01:51] Starting ingestion from local CSV...
+[2025-09-06 19:01:51] Local CSV copied to artifacts\full-run\raw.csv
+[2025-09-06 19:01:51] Starting standardization...
+[2025-09-06 19:01:51] Loading raw data from artifacts\full-run\raw.csv
+[2025-09-06 19:01:51] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 19:01:51] Missing values before: 0, after: 0
+[2025-09-06 19:01:51] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 19:01:51] Rows: 31, Columns: 5
+[2025-09-06 19:01:51] Starting transformation...
+[2025-09-06 19:01:51] Transformed data saved to artifacts\full-run\transformed.csv
+[2025-09-06 19:01:51] Generating insights...
+[2025-09-06 19:01:51] === Literacy Insights ===
+[2025-09-06 19:01:51] Total districts: 31
+[2025-09-06 19:06:37] Logger initialized
+[2025-09-06 19:06:37] Starting ingestion from local CSV...
+[2025-09-06 19:06:37] Local CSV copied to artifacts\full-run\raw.csv
+[2025-09-06 19:06:37] Starting standardization...
+[2025-09-06 19:06:37] Loading raw data from artifacts\full-run\raw.csv
+[2025-09-06 19:06:37] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 19:06:37] Missing values before: 0, after: 0
+[2025-09-06 19:06:37] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 19:06:37] Rows: 31, Columns: 5
+[2025-09-06 19:06:37] Starting transformation...
+[2025-09-06 19:06:37] Transformed data saved to artifacts\full-run\transformed.csv
+[2025-09-06 19:06:37] Generating insights...
+[2025-09-06 19:06:37] === Literacy Insights ===
+[2025-09-06 19:06:37] Total districts: 31
+[2025-09-06 19:10:00] Logger initialized
+[2025-09-06 19:10:00] Starting ingestion from local CSV...
+[2025-09-06 19:10:00] Local CSV copied to artifacts\full-run\raw.csv
+[2025-09-06 19:10:00] Starting standardization...
+[2025-09-06 19:10:00] Loading raw data from artifacts\full-run\raw.csv
+[2025-09-06 19:10:00] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 19:10:00] Missing values before: 0, after: 0
+[2025-09-06 19:10:00] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 19:10:00] Rows: 31, Columns: 5
+[2025-09-06 19:10:00] Starting transformation...
+[2025-09-06 19:10:00] Transformed data saved to artifacts\full-run\transformed.csv
+[2025-09-06 19:10:00] Generating insights...
+[2025-09-06 19:10:00] === Literacy Insights ===
+[2025-09-06 19:10:00] Total districts: 31
+[2025-09-06 19:13:50] Logger initialized
+[2025-09-06 19:13:50] Starting ingestion from local CSV...
+[2025-09-06 19:13:50] Local CSV copied to artifacts\full-run\raw.csv
+[2025-09-06 19:13:50] Starting standardization...
+[2025-09-06 19:13:50] Loading raw data from artifacts\full-run\raw.csv
+[2025-09-06 19:13:50] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 19:13:50] Missing values before: 0, after: 0
+[2025-09-06 19:13:50] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 19:13:50] Rows: 31, Columns: 5
+[2025-09-06 19:13:50] Starting transformation...
+[2025-09-06 19:13:50] Transformed data saved to artifacts\full-run\transformed.csv
+[2025-09-06 19:13:50] Generating insights...
+[2025-09-06 19:13:50] === Literacy Insights ===
+[2025-09-06 19:13:50] Total districts: 31
+[2025-09-06 19:48:29] Logger initialized
+[2025-09-06 19:48:29] Starting ingestion from local CSVs...
+[2025-09-06 19:48:29] Copied literacy.csv to artifacts\full-run\raw_literacy.csv
+[2025-09-06 19:51:37] Logger initialized
+[2025-09-06 19:51:37] Starting ingestion from literacy CSV...
+[2025-09-06 19:51:37] Copied literacy.csv to artifacts\full-run\raw_literacy.csv
+[2025-09-06 19:51:37] Starting standardization...
+[2025-09-06 19:51:37] Loading raw data from artifacts\full-run\raw_literacy.csv
+[2025-09-06 19:51:37] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 19:51:37] Missing values before: 0, after: 0
+[2025-09-06 19:51:37] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 19:51:37] Rows: 31, Columns: 5
+[2025-09-06 19:51:37] Starting transformation...
+[2025-09-06 19:51:37] === Literacy Insights ===
+[2025-09-06 19:51:37] Total districts: 31
+[2025-09-06 19:54:30] Logger initialized
+[2025-09-06 19:54:30] Starting ingestion from literacy CSV...
+[2025-09-06 19:54:30] Copied literacy.csv to artifacts\full-run\raw_literacy.csv
+[2025-09-06 19:54:30] Starting standardization...
+[2025-09-06 19:54:30] Loading raw data from artifacts\full-run\raw_literacy.csv
+[2025-09-06 19:54:30] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 19:54:30] Missing values before: 0, after: 0
+[2025-09-06 19:54:30] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 19:54:30] Rows: 31, Columns: 5
+[2025-09-06 19:54:30] Starting transformation...
+[2025-09-06 19:54:30] Transformed dataset saved to artifacts\full-run\transformed_literacy.csv
+[2025-09-06 19:54:31] === Literacy Insights ===
+[2025-09-06 19:54:31] Total districts: 31
+[2025-09-06 19:58:51] Logger initialized
+[2025-09-06 19:58:51] Starting ingestion from local CSVs...
+[2025-09-06 19:58:51] Copied literacy.csv to artifacts\full-run\raw_literacy.csv
+[2025-09-06 20:01:33] Logger initialized
+[2025-09-06 20:01:33] Starting ingestion from literacy CSV...
+[2025-09-06 20:01:33] Copied literacy.csv to artifacts\full-run\raw_literacy.csv
+[2025-09-06 20:01:33] Starting standardization...
+[2025-09-06 20:01:33] Loading raw data from artifacts\full-run\raw_literacy.csv
+[2025-09-06 20:01:33] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 20:01:33] Missing values before: 0, after: 0
+[2025-09-06 20:01:33] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 20:01:33] Rows: 31, Columns: 5
+[2025-09-06 20:01:33] Starting transformation...
+[2025-09-06 20:01:33] Transformed dataset saved to artifacts\full-run\transformed_literacy.csv
+[2025-09-06 20:01:33] === Literacy Insights ===
+[2025-09-06 20:01:33] Total districts: 31
+[2025-09-06 20:10:18] Logger initialized
+[2025-09-06 20:10:18] Starting ingestion from literacy CSV...
+[2025-09-06 20:10:18] Copied literacy.csv to artifacts\full-run\raw_literacy.csv
+[2025-09-06 20:10:18] Starting standardization...
+[2025-09-06 20:10:18] Loading raw data from artifacts\full-run\raw_literacy.csv
+[2025-09-06 20:10:18] Standardized columns: ['districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females']
+[2025-09-06 20:10:19] Missing values before: 0, after: 0
+[2025-09-06 20:10:19] Standardized dataset saved: artifacts\full-run\standardized.csv
+[2025-09-06 20:10:19] Rows: 31, Columns: 5
+[2025-09-06 20:10:19] Starting transformation...
+[2025-09-06 20:10:19] Transformed dataset saved to artifacts\full-run\transformed_literacy.csv
+[2025-09-06 20:10:19] === Literacy Insights ===
+[2025-09-06 20:10:19] Total districts: 31
