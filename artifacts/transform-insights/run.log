@@ -1,0 +1,33 @@
+[2025-09-06 00:01:26] Logger initialized
+[2025-09-06 00:01:26] Loading standardized data from artifacts\standardize-only\standardized.csv
+[2025-09-06 00:01:42] Logger initialized
+[2025-09-06 00:01:42] Loading standardized data from artifacts\standardize-only\standardized.csv
+[2025-09-06 00:04:04] Logger initialized
+[2025-09-06 00:04:04] Loading standardized data from artifacts\standardize-only\standardized.csv
+[2025-09-06 00:04:04] Transformed dataset saved: artifacts\transform-insights\transformed.csv
+[2025-09-06 00:04:04] === Literacy Insights ===
+[2025-09-06 00:04:04] Total districts: 31
+[2025-09-06 00:04:04] Highest avg literacy: HYDERABAD → 83.17%
+[2025-09-06 00:04:04] Lowest avg literacy: JOGULAMBA  → 49.77%
+[2025-09-06 00:04:04] Largest gender gap: MEDAK  → 22.36%
+[2025-09-06 00:05:05] Logger initialized
+[2025-09-06 00:05:05] Loading standardized data from artifacts\standardize-only\standardized.csv
+[2025-09-06 00:05:05] Transformed dataset saved: artifacts\transform-insights\transformed.csv
+[2025-09-06 00:05:05] === Literacy Insights ===
+[2025-09-06 00:05:05] Total districts: 31
+[2025-09-06 00:05:05] Highest avg literacy: HYDERABAD → 83.17%
+[2025-09-06 00:05:05] Lowest avg literacy: JOGULAMBA  → 49.77%
+[2025-09-06 00:05:05] Largest gender gap: MEDAK  → 22.36%
+[2025-09-06 00:05:45] Logger initialized
+[2025-09-06 00:05:45] Loading standardized data from artifacts\standardize-only\standardized.csv
+[2025-09-06 00:05:45] Transformed dataset saved: artifacts\transform-insights\transformed.csv
+[2025-09-06 00:05:45] === Literacy Insights ===
+[2025-09-06 00:05:45] Total districts: 31
+[2025-09-06 00:05:45] Highest avg literacy: HYDERABAD → 83.17%
+[2025-09-06 00:05:45] Lowest avg literacy: JOGULAMBA  → 49.77%
+[2025-09-06 00:05:45] Largest gender gap: MEDAK  → 22.36%
+[2025-09-06 00:06:27] Logger initialized
+[2025-09-06 00:06:27] Loading standardized data from artifacts\standardize-only\standardized.csv
+[2025-09-06 00:06:27] Transformed dataset saved: artifacts\transform-insights\transformed.csv
+[2025-09-06 00:06:27] === Literacy Insights ===
+[2025-09-06 00:06:27] Total districts: 31
