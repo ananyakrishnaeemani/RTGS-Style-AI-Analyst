@@ -8,6 +8,13 @@ import shutil
 from texttable import Texttable
 from termcolor import colored
 
+# 🔹 New imports for AI features
+from sklearn.cluster import KMeans
+from sklearn.ensemble import IsolationForest
+from sklearn.linear_model import LinearRegression
+import numpy as np
+from transformers import pipeline
+
 # -----------------------------
 # Directories & dataset
 # -----------------------------
@@ -69,27 +76,87 @@ def display_table(df_subset, title, value_col, scale=1, color_threshold=None):
     print(table.draw())
 
 # -----------------------------
+# 6️⃣ AI Analysis Functions
+# -----------------------------
+def run_clustering(df):
+    kmeans = KMeans(n_clusters=3, random_state=42)
+    df["cluster"] = kmeans.fit_predict(df[["literacy_rate_avg"]])
+    print("\nClustering Results (3 groups of districts by literacy rate):")
+    print(df[["districts", "literacy_rate_avg", "cluster"]].head(10))
+    return df
+
+def run_anomaly_detection(df):
+    iso = IsolationForest(random_state=42)
+    df["outlier"] = iso.fit_predict(df[["literacy_rate_avg"]])
+    anomalies = df[df["outlier"] == -1]
+    print("\n🚨 Districts flagged as anomalies (unusually low literacy):")
+    print(anomalies[["districts", "literacy_rate_avg"]])
+    return anomalies
+
+def run_regression_forecast(df):
+    X = np.arange(len(df)).reshape(-1, 1)
+    y = df["literacy_rate_avg"].values
+    model = LinearRegression().fit(X, y)
+    next_idx = np.array([[len(df)]])
+    forecast = model.predict(next_idx)[0]
+    print(f"\n📈 Forecasted average literacy rate for next district index: {forecast:.2f}%")
+
+def run_nl_query(df, query):
+    query = query.lower()
+
+    # normalize column names
+    df.columns = df.columns.str.strip().str.lower().str.replace(" ", "_")
+
+    # Now your columns are:
+    # 'districts', 'males', 'females', 'literacy_rate_males', 'literacy_rate_females'
+
+    if "gap" in query and ("largest" in query or "highest" in query):
+        df["gap"] = (df["literacy_rate_males"] - df["literacy_rate_females"]).abs()
+        top_gap = df.nlargest(5, "gap")[["districts", "gap"]]
+        print("\n🤖 Answer: Districts with the largest male-female literacy gap:")
+        print(top_gap.to_string(index=False))
+        return
+
+    elif "top" in query and "literacy" in query:
+        df["literacy_rate_avg"] = df[["literacy_rate_males", "literacy_rate_females"]].mean(axis=1)
+        top = df.nlargest(5, "literacy_rate_avg")[["districts", "literacy_rate_avg"]]
+        print("\n🤖 Answer: Top 5 districts by average literacy rate:")
+        print(top.to_string(index=False))
+        return
+
+    elif "bottom" in query and "literacy" in query:
+        df["literacy_rate_avg"] = df[["literacy_rate_males", "literacy_rate_females"]].mean(axis=1)
+        bottom = df.nsmallest(5, "literacy_rate_avg")[["districts", "literacy_rate_avg"]]
+        print("\n🤖 Answer: Bottom 5 districts by average literacy rate:")
+        print(bottom.to_string(index=False))
+        return
+
+    else:
+        print("\n🤖 Sorry, I couldn't understand your question. Try asking about:")
+        print("- Largest male-female gap")
+        print("- Top/Bottom districts by literacy rate")
+        print("- Average literacy")
+
+
+# -----------------------------
 # 7️⃣ Terminal Histogram Summary
 # -----------------------------
 def display_summary_histogram(df):
     print("\n--- Summary Histogram: All Districts ---")
     
-    # Literacy rates
     print("\nAverage Literacy Rates:")
     for _, row in df.iterrows():
-        bar = "█" * int(row['literacy_rate_avg'] / 2)  # scale factor for visibility
+        bar = "█" * int(row['literacy_rate_avg'] / 2)
         print(f"{row['districts'][:15]:15} | {bar} {row['literacy_rate_avg']:.2f}%")
     
-    # Gender gap
     print("\nGender Gap (male-female):")
     for _, row in df.iterrows():
         bar = "█" * int(abs(row['gender_gap']) / 2)
         bar_color = "red" if row['gender_gap'] > 10 else "yellow"
         print(f"{row['districts'][:15]:15} | {colored(bar, bar_color)} {row['gender_gap']:.2f}%")
 
-
 # -----------------------------
-# 6️⃣ Interactive CLI Loop
+# 8️⃣ Interactive CLI Loop
 # -----------------------------
 while True:
     print("\n--- Telangana Literacy Dashboard ---")
@@ -98,7 +165,11 @@ while True:
     print("3: Top N districts by gender gap")
     print("4: Filter by district name")
     print("5: Show summary histogram for all districts")
-    print("6: Exit")
+    print("6: Run AI clustering")
+    print("7: Run anomaly detection")
+    print("8: Forecast literacy trend")
+    print("9: Ask a natural-language question")
+    print("10: Exit")
     choice = input("Enter option: ").strip()
 
     if choice == "1":
@@ -122,8 +193,16 @@ while True:
             display_table(filtered, f"Districts matching '{name}'", 'literacy_rate_avg')
     elif choice == "5":
         display_summary_histogram(df)
-        break
     elif choice == "6":
+        df = run_clustering(df)
+    elif choice == "7":
+        run_anomaly_detection(df)
+    elif choice == "8":
+        run_regression_forecast(df)
+    elif choice == "9":
+        query = input("Enter your question: ")
+        run_nl_query(df, query)
+    elif choice == "10":
         print("Exiting...")
         break
     else:
