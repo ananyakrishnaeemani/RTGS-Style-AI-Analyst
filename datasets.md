@@ -1,7 +1,6 @@
 # Dataset Manifest
 
-## This project uses literacy data for Telangana districts to generate insights, visualizations, and policy recommendations.
-# 📊 Dataset Manifest
+### This project uses literacy data for Telangana districts to generate insights, visualizations, and policy recommendations.
 ```
 This project uses Telangana literacy data to compute insights and visualizations.
 
