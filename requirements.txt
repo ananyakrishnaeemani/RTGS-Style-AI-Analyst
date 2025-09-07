@@ -11,3 +11,11 @@ texttable
 termcolor
 streamlit
 seaborn
+scikit-learn
+
+
+# YAML Config
+pyyaml
+
+# Logging and Progress
+tqdm
