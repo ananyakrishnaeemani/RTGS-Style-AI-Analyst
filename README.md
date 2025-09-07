@@ -13,7 +13,7 @@ Governance Relevance:
 - Identify gender disparities in literacy.
 - Support evidence-based policy interventions.
 
-##Agentic Architecture
+## Agentic Architecture
 The pipeline is modular with four main agents:
 Stage	Agent	Responsibility
 ```
