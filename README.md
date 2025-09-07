@@ -12,15 +12,31 @@ Governance Relevance:
 - Understand literacy trends by district.
 - Identify gender disparities in literacy.
 - Support evidence-based policy interventions.
+  
+## AI Features & Models
 
-## Agentic Architecture
-The pipeline is modular with four main agents:
-Stage	Agent	Responsibility
+We integrated AI/ML models (scikit-learn) to extract deeper insights from literacy data:
+Clustering – KMeans 
+- Groups districts into literacy clusters (e.g., high, medium, low).
+- Helps identify regions with similar literacy patterns.
+Anomaly Detection – IsolationForest
+- Flags unusual districts with very low or unexpected literacy rates.
+- Useful for detecting outliers that require special attention.
+Forecasting – Linear Regression
+- Predicts literacy trends for upcoming districts (index-based).
+- Demonstrates time-series–like forecasting on static data.
+Predictive Modeling – Linear Regression
+- Learns from population, male literacy, and female literacy.
+- Predicts the overall average literacy rate.
+
+## Architecture
 ```
-1️⃣ Ingest	IngestAgent	Load raw CSV (from URL or local) and save as raw.csv.
-2️⃣ Standardize	StandardizationAgent	Standardize column names, types, and units.
-3️⃣ Transform	TransformAgent	Compute derived fields: average literacy, gender gap.
-4️⃣ Insights	InsightsAgent	Generate top/bottom districts, gender gap tables, and ASCII charts in CLI.
+Ingestion Agent → Loads dataset(s)
+Cleaning Agent → Handles missing values, type conversions
+Transformation Agent → Normalization, derived columns
+Insights Agent → Generates descriptive & AI-powered insights
+Visualization Agent → Saves charts and plots
+Export Agent → Produces documentation + logs
 ```
 📁 Repo Structure
 ```
