@@ -1,5 +1,8 @@
 # RTGS-Style-AI-Analyst
 
+## Video Demo
+https://drive.google.com/file/d/1099J3rdSPTazPUgs2aXU3Qfie1_cLJgu/view?usp=sharing
+
 ## Project Overview
 This project prototypes a Real-Time Governance System (RTGS) for policymakers using Telangana open government data. It is a terminal-first agentic system that ingests raw CSV datasets, cleans and standardizes the data, performs transformations, and surfaces actionable insights via the CLI.
 
