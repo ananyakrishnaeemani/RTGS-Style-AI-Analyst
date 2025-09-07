@@ -9,3 +9,5 @@ matplotlib>=3.8
 python-slugify>=8.0
 texttable 
 termcolor
+streamlit
+seaborn
